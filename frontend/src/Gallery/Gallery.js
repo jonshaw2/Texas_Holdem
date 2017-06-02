@@ -18,23 +18,27 @@ componentDidMount() {
     if (this.props.category.length !== 0){
 
       category = this.props.category.map((categories, idx) =>
-
+      <div>
         <div key={idx} className="category" >
           <h2>
             {categories.toUpperCase()}
           </h2>
+        </div>
         <div>
-        {this.props.tables[categories].map((tables, idx2) =>
-            <div  key={idx2}>
-            <Link className="imageAndName" to={"/tables/" + tables.id}>
-              {tables.tablename}
-            </Link>
+          {this.props.tables[categories].map((tables, idx2) =>
+              <div  key={idx2} className="table_gallery">
+              <Link className="imageAndName" to={"/tables/" + tables.id}>
+                <button>Join Table</button>
+              </Link><br/><br/>
+              Table Name: {'  '+tables.tablename} <br/>
+               Ai Chips: {tables.aichips}<br/>
+              Player Assist: {tables.probability_assist}
+              
+              </div>
 
-            </div>
-          )}
+            )}
         </div>
       </div>
-
       )
     }
     return(

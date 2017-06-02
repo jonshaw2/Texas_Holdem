@@ -10,16 +10,16 @@ class CreateTable extends React.Component {
     let user_id = this.props.loginUser.id;
     let token = this.props.loginUser.currentToken;
     let probabilityButton = ''
-    if(probabilityassist === 'false'){
+    if(probabilityassist === 'Off'){
       probabilityButton =
       <div>
-      Probability Assist: <button onClick={(event) => {this.props.changeProbability('true')}}>Off</button>
+      Probability Assist: <button onClick={(event) => {this.props.changeProbability('On')}}>Off</button>
       </div>
 
     } else{
       probabilityButton =
       <div>
-      Probability Assist: <button onClick={(event) => {this.props.changeProbability('false')}}>On</button>
+      Probability Assist: <button onClick={(event) => {this.props.changeProbability('Off')}}>On</button>
       </div>
     }
 

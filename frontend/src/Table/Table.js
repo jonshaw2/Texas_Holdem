@@ -25,7 +25,7 @@ componentDidMount() {
     if(this.props.table.tableInfo){
       table = this.props.table;
       tableName = table.tablename;
-      if (this.props.table.tableInfo.probability_assist === 'true'  && this.props.table.playerHand[0].length > 0){
+      if (this.props.table.tableInfo.probability_assist === 'On'  && this.props.table.playerHand[0].length > 0){
         let userWinRate = playerAssist(this.props.table.playerState,this.props.table.playerHand,this.props.table.riverHand,this.props.table.deck);
         userWinRate = Math.floor(userWinRate*100)
         probabilityAssist = <div>

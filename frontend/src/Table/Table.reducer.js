@@ -334,8 +334,13 @@ function reducer(state = INITIAL_STATE, action){
         condition.tempMessage.push('push between player 1 and 2');
         newChips = state.chips
       } else{
-        condition.tempMessage.push('player ' + winner[0]+' wins');
-        newChips = state.chips.map((item, i)=> i === winner[0]? item+state.pot : item)
+        if(winner[0] == 0){
+          condition.tempMessage.push('player ' + winner[0]+' wins');
+          newChips = state.chips.map((item, i)=> i === winner[0]? item+state.pot : item)
+        } else{
+          condition.tempMessage.push('AI Wins');
+          newChips = state.chips.map((item, i)=> i === winner[0]? item+state.pot : item)
+        }
 
       }
 

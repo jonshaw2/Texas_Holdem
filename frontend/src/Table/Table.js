@@ -84,7 +84,7 @@ componentDidMount() {
       }
     }
 
-    let message='test'
+    let message=''
     if (this.props.table.message.length > 0){
       message =
       <div>
@@ -106,7 +106,7 @@ componentDidMount() {
     let currentStatus = this.props.table.currentStatus;
 
     if (this.props.table.message.length !== 0){
-      CenterMessage = <div>Message: {this.props.table.message[this.props.table.message.length-1]}<br/></div>
+      CenterMessage = <div className= "centerMessage">Message: {this.props.table.message[this.props.table.message.length-1]}<br/></div>
     }
 
     if(this.props.table.Seat[1]===true){

@@ -219,6 +219,10 @@ text-align: center;
   text-align: center;
 }
 
+.centerMessage{
+height: 16px;  
+}
+
 .dealButton{
   position: absolute;
   width: 10%;

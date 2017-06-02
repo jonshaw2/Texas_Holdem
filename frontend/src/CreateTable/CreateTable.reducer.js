@@ -1,7 +1,7 @@
 const INITIAL_STATE = {
   tablename : '',
   probabilityassist : 'false',
-  aichips : 0
+  aichips : 10000
 };
 
 export default function reducer(state = INITIAL_STATE, action) {

@@ -140,12 +140,12 @@ componentDidMount() {
                                       <button onClick={()=>this.props.Stand()}>Check</button>
                                       <button onClick={()=>this.props.Raise()}>Raise</button><br/>
                                       <button onClick={()=>this.props.Fold()}>Fold</button><br/>
+                                      <button onClick={()=>this.props.ChangeBet(0,-500)}>-500</button>
                                       <button onClick={()=>this.props.ChangeBet(0,-50)}>-50</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,-5)}>-5</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,-10)}>-10</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,5)}>+5</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,10)}>+10</button>
+                                      <button onClick={()=>this.props.ChangeBet(0,-100)}>-100</button>
                                       <button onClick={()=>this.props.ChangeBet(0,50)}>+50</button>
+                                      <button onClick={()=>this.props.ChangeBet(0,100)}>+100</button>
+                                      <button onClick={()=>this.props.ChangeBet(0,500)}>+500</button>
 
                                     </div>
                       }
@@ -155,12 +155,12 @@ componentDidMount() {
                                       <button onClick={()=>this.props.Stand()}>Match Raise</button>
                                       <button onClick={()=>this.props.Raise()}>Raise Again</button><br/>
                                       <button onClick={()=>this.props.Fold()}>Fold</button><br/>
+                                      <button onClick={()=>this.props.ChangeBet(0,-500)}>-500</button>
                                       <button onClick={()=>this.props.ChangeBet(0,-50)}>-50</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,-5)}>-5</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,-10)}>-10</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,5)}>+5</button>
-                                      <button onClick={()=>this.props.ChangeBet(0,10)}>+10</button>
+                                      <button onClick={()=>this.props.ChangeBet(0,-100)}>-100</button>
                                       <button onClick={()=>this.props.ChangeBet(0,50)}>+50</button>
+                                      <button onClick={()=>this.props.ChangeBet(0,100)}>+100</button>
+                                      <button onClick={()=>this.props.ChangeBet(0,500)}>+500</button>
 
                                     </div>
                       }

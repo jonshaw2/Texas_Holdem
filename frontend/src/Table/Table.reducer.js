@@ -37,10 +37,21 @@ function reducer(state = INITIAL_STATE, action){
 
   if (action.type === 'Raise'){
 
+    if (state.lastRaise !==1){
+      if(state.chips[0]-state.raise[0] < 0){
+        return state;
+      }
+    }
+
     if (state.lastRaise === 1){
       let newRaise = state.raise.map((item, i)=> item)
       let newChips = state.chips.map((item, j)=> j === 0? item-newRaise[1] : item)
       let newPot = state.pot + newRaise[1]
+
+      if (newChips[0] - newRaise[0] < 0){
+        return state;
+      }
+
       state = Object.assign({}, state, {
         chips: newChips,
         pot: newPot

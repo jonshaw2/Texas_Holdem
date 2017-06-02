@@ -21,6 +21,9 @@ export function changeTableName(tablename){
 }
 
 export function changeAiChips(aichips){
+  if (aichips <0){
+    aichips = 0;
+  }
   return {type: 'changeAiChips', aichips:aichips}
 }
 

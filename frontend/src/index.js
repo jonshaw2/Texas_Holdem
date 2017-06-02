@@ -61,7 +61,7 @@ class AppLayout extends React.Component {
     } else{
 
       accountInfo = <div className='login_info'>Welcome {this.props.state.loginUser.username.toUpperCase()}
-      <Link className='login_link' onClick={this.props.logout}>Log Out </Link>
+      <Link className='login_link' to="/LogIn" activeClassName="active" onClick={this.props.logout}>Log Out </Link>
       </div>
     }
 

@@ -57,6 +57,11 @@ body {
   color: white;
 }
 
+.signup input{
+
+  margin: 0 0 5px 5px;
+}
+
 .create_table{
   padding: 5px;
   background-color: black;

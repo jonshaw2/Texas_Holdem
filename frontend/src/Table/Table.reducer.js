@@ -11,7 +11,7 @@ const INITIAL_STATE = {
   riverHand: [],
   lastRaise: -1,
   combinedHand: [[],[],[],[]],
-  message: [],
+  message: ['Game Start'],
   raise:[0,0,0,0],
   chips:[1000,1000000000,0,0],
   pot: 0,
@@ -34,7 +34,7 @@ function reducer(state = INITIAL_STATE, action){
   if (action.type === 'addTable'){
     return state
   }
-  
+
   if (action.type === 'Raise'){
 
     if (state.lastRaise === 1){

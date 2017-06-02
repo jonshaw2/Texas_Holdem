@@ -181,6 +181,12 @@ text-align: center;
   }
 }
 
+@media (max-width: 630px){
+  .cards{
+    height: 90px;
+  }
+}
+
 
 .player1 img{
   padding-right: 5px;

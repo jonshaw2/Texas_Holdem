@@ -138,7 +138,7 @@ function reducer(state = INITIAL_STATE, action){
       currentStatus: 'Waiting',
       riverHand: [],
       playerHand: [[],[]],
-      message: [],
+      message: ['Game Start'],
       playerState: ["fold","fold","fold","fold"],
       combineHand: [[],[],[],[]],
       pot: 0,

@@ -63,8 +63,8 @@ componentDidMount() {
 
       player0Hand =
       <div>
-        <img src={require("../images/" + this.props.table.playerHand[0][0].point + '_of_' + this.props.table.playerHand[0][0].suit + '.png')} alt='' height="100"/>
-        <img src={require("../images/" + this.props.table.playerHand[0][1].point + '_of_' + this.props.table.playerHand[0][1].suit + '.png')} alt='' height="100"/>
+        <img className='cards' src={require("../images/" + this.props.table.playerHand[0][0].point + '_of_' + this.props.table.playerHand[0][0].suit + '.png')} alt='' height="100"/>
+        <img className='cards' src={require("../images/" + this.props.table.playerHand[0][1].point + '_of_' + this.props.table.playerHand[0][1].suit + '.png')} alt='' height="100"/>
       </div>
 
     }
@@ -76,14 +76,14 @@ componentDidMount() {
       if (this.props.table.currentStatus === 'end'){
         player1Hand =
         <div>
-          <img src={require("../images/" + this.props.table.playerHand[1][0].point + '_of_' + this.props.table.playerHand[1][0].suit + '.png')} alt='' height="100"/>
-          <img src={require("../images/" + this.props.table.playerHand[1][1].point + '_of_' + this.props.table.playerHand[1][1].suit + '.png')} alt='' height="100"/>
+          <img className='cards' src={require("../images/" + this.props.table.playerHand[1][0].point + '_of_' + this.props.table.playerHand[1][0].suit + '.png')} alt='' height="100"/>
+          <img className='cards' src={require("../images/" + this.props.table.playerHand[1][1].point + '_of_' + this.props.table.playerHand[1][1].suit + '.png')} alt='' height="100"/>
         </div>
       }else{
         player1Hand =
         <div>
-          <img src={require("../images/card_back.jpg")} alt='' height="100"/>
-          <img src={require("../images/card_back.jpg")} alt='' height="100"/>
+          <img className='cards' src={require("../images/card_back.jpg")} alt='' height="100"/>
+          <img className='cards' src={require("../images/card_back.jpg")} alt='' height="100"/>
         </div>
       }
     }
@@ -174,7 +174,7 @@ componentDidMount() {
       riverHand =
       <div className="river">
         {this.props.table.riverHand.map((hand, idx) =>
-                <img key={idx} src={require("../images/" + hand.point + '_of_' + hand.suit + '.png')} alt='' height="100"/>
+                <img className='cards' key={idx} src={require("../images/" + hand.point + '_of_' + hand.suit + '.png')} alt='' height="100"/>
         )}
       </div>
     }

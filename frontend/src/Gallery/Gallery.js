@@ -28,12 +28,12 @@ componentDidMount() {
           {this.props.tables[categories].map((tables, idx2) =>
               <div  key={idx2} className="table_gallery">
               <Link className="imageAndName" to={"/tables/" + tables.id}>
-                <button>Join Table</button>
+                <button className="join_table_button">Join Table</button>
               </Link><br/><br/>
               Table Name: {'  '+tables.tablename} <br/>
                Ai Chips: {tables.aichips}<br/>
               Player Assist: {tables.probability_assist}
-              
+
               </div>
 
             )}

@@ -4,6 +4,11 @@ import * as actions from './CreateTable.actions';
 
 class CreateTable extends React.Component {
   render() {
+
+    if(this.props.loginUser.currentToken === ""){
+      this.props.redirectToLogin()
+    }
+
     let tablename = this.props.createtable.tablename;
     let probabilityassist = this.props.createtable.probabilityassist;
     let aichips = this.props.createtable.aichips;

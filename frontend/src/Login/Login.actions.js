@@ -28,8 +28,7 @@ export function storeData(){
   console.log('in the store data');
 }
 export function submitLogin(username, password){
-  console.log(username);
-  console.log(password);
+
   let asyncAction = function(dispatch){
     $.ajax({
       url: `${BASEURL}/api/user/login`,

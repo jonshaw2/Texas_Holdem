@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { hashHistory} from 'react-router';
 import BASEURL from '../baseurl';
 
 function tableInfo(data){
@@ -7,6 +8,11 @@ function tableInfo(data){
 function tableError(resp){
   let error = (resp && resp.responseJSON && resp.responseJSON.message) || 'Something went wrong!';
   console.log(error);
+}
+
+export function redirectToLogin(){
+    hashHistory.push('/LogIn');
+    return {type: 'addTable'};
 }
 
 export function sitDown(seat, data){

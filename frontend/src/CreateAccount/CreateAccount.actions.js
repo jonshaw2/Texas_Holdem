@@ -12,6 +12,7 @@ function accountError(resp){
   return;
 }
 
+
 export function changeUsername(username){
   return{type:'changeUsername', username:username};
 }

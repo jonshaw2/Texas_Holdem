@@ -10,6 +10,10 @@ componentDidMount() {
 
   render(){
 
+    if(this.props.loginUser.currentToken === ""){
+      this.props.redirectToLogin()
+    }
+
     if(this.props.table.currentStatus==='end'){
       this.props.storeData(this.props.table.chips[0], this.props.table.chips[1], this.props.loginUser.id, this.props.table.tableInfo.id)
     }

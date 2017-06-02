@@ -11,6 +11,10 @@ function tableError(resp){
   console.log('error:',resp);
   return;
 }
+export function redirectToLogin(){
+    hashHistory.push('/LogIn');
+    return {type: 'addTable'};
+}
 
 export function changeTableName(tablename){
   return {type: 'changeTableName', tablename: tablename}

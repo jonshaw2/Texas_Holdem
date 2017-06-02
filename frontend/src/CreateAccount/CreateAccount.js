@@ -5,6 +5,8 @@ import * as actions from './CreateAccount.actions';
 class CreateAccount extends React.Component {
   render() {
 
+
+
     let username = this.props.user.username;
     let password = this.props.user.password;
     let name = this.props.user.name;
@@ -28,7 +30,8 @@ class CreateAccount extends React.Component {
 
 const CreateAccountContainer = ReactRedux.connect(
   state => ({
-    user: state.createUser
+    user: state.createUser,
+    loginUser: state.loginUser
   }),
   actions
 )(CreateAccount);

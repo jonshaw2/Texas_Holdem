@@ -60,14 +60,39 @@ export function aiMove(playerState,playerHand,riverHand, deck){
           if(condition.winner[i].winning >= maxWinner){
             maxWinner = condition.winner[i].winning
 
+            if(condition.winner[i].One > maxOne){
+              maxOne=0
+              maxTwo=0
+              maxThree=0
+              maxFour=0
+              maxFive=0
+            }
             if(condition.winner[i].One >= maxOne){
               maxOne = condition.winner[i].One
+
+              if(condition.winner[i].Two > maxTwo){
+                maxTwo=0
+                maxThree=0
+                maxFour=0
+                maxFive=0
+              }
 
               if(condition.winner[i].Two >= maxTwo){
                 maxTwo = condition.winner[i].Two
 
                 if(condition.winner[i].Three >= maxThree){
+                  maxThree=0
+                  maxFour=0
+                  maxFive=0
+                }
+
+                if(condition.winner[i].Three >= maxThree){
                   maxThree = condition.winner[i].Three
+
+                  if(condition.winner[i].Four >= maxFour){
+                    maxFour=0
+                    maxFive=0
+                  }
 
                   if(condition.winner[i].Four >= maxFour){
                     maxFour = condition.winner[i].Four

@@ -138,7 +138,7 @@ text-align: center;
   position: relative;
   background-color: green;
   width: 100%;
-  height: 550px;
+  height: 600px;
 }
 
 .riverCards{
@@ -166,7 +166,7 @@ text-align: center;
 .player1{
   position: absolute;
   width: auto;
-  min-width: 200px;
+  min-width: 220px;
   margin: 23px 40% 0 40%;
 
 }
@@ -175,11 +175,13 @@ text-align: center;
   .player1{
     position: absolute;
     width: auto;
-    min-width: 200px;
+    min-width: 220px;
     margin: 23px 0 0 5%;
 
   }
 }
+
+
 
 .player1 img{
   padding-right: 5px;
@@ -188,7 +190,7 @@ text-align: center;
 .player0{
   position: absolute;
   width: auto;
-  min-width: 200px;
+  min-width: 220px;
   margin: 0 40% 10px 40%;
 
   bottom: 0;
@@ -198,7 +200,7 @@ text-align: center;
   .player0{
     position: absolute;
     width: auto;
-    min-width: 200px;
+    min-width: 220px;
     margin: 0 0px 10px 5%;
 
     bottom: 0;

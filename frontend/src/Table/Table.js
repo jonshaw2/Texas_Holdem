@@ -181,34 +181,37 @@ componentDidMount() {
         {tableName}
         <div className='table'>
 
-        <button onClick={()=>this.props.Reset()}>Reset</button> <br/>
-        <div className='player1Pot'>
-        {player1Bet}
-        </div>
-        <div className='player1'>
-        {seat[1]}
-        {player1Hand}
-        </div>
-        {dealButton}
-        {Pot}
-        {CenterMessage}
-        <div className='riverCards'>
+          <button className="resetButton" onClick={()=>this.props.Reset()}>Reset</button> <br/>
+          <div className='player1Pot'>
+          {player1Bet}
+          </div>
+          <div className='player1'>
+          {seat[1]}
+          {player1Hand}
+          </div>
+          <div message>
+            {dealButton}
+            {Pot}
+            {CenterMessage}
+          </div>
+          <div className='riverCards'>
 
-          {riverHand}
+            {riverHand}
 
-        </div>
-        <div className='player0Pot'>
-        {player0Bet}
-        </div>
+          </div>
+          <div className='player0Pot'>
+          {player0Bet}
+          </div>
 
-        <div className='player0'>
-          {probabilityAssist}
-          {seat[0]}
+          <div className='player0'>
+            {probabilityAssist}
+            {seat[0]}
 
-          {player0Hand}
+            {player0Hand}
 
-          {player0ActionButton}
-        </div>
+            {player0ActionButton}
+
+          </div>
         </div>
         <div className="tableMessage">
         {message}

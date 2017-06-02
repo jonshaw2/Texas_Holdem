@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
   tablename : '',
-  probabilityassist : 'false',
+  probabilityassist : 'On',
   aichips : 10000
 };
 

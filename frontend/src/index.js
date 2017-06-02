@@ -74,6 +74,7 @@ class AppLayout extends React.Component {
         <div className='home_links'>
           <IndexLink className="home_url" to="/" activeClassName="active">Home</IndexLink>
           <IndexLink className="create_table" to="/CreateTable" activeClassName="active">Create Table</IndexLink>
+          <a className="rules" href="https://www.partypoker.com/how-to-play/texas-holdem.html" target="_blank" activeClassName="active" >Rules</a>
         </div>
 
         <div>

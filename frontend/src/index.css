@@ -52,6 +52,8 @@ body {
 
 }
 
+
+
 .signup{
   padding-left: 5%;
   color: white;
@@ -63,6 +65,15 @@ body {
 }
 
 .create_table{
+  padding: 5px;
+  background-color: black;
+  width: 100%;
+  font-size: 20px;
+  color: orange;
+  text-decoration: none;
+}
+
+.rules{
   padding: 5px;
   background-color: black;
   width: 100%;
@@ -108,6 +119,7 @@ body {
   padding-left: 5%;
   margin-right: 5px;
 }
+
 
 .login_link{
   text-decoration: none;

@@ -69,13 +69,17 @@ function reducer(state = INITIAL_STATE, action){
         newPot += newRaise[i]
       }
 
+      let tempMessage = state.message.map((item, i)=> item)
+      tempMessage.push('AI Matched your raise')
+
       return Object.assign({}, state, {
         raise: newRaise,
         chips: newChips,
         pot: newPot,
         lastRaise: 0,
         raiseButton: true,
-        aiBetWeight: state.aiBetWeight + .1
+        aiBetWeight: state.aiBetWeight + .1,
+        message: tempMessage
       })
     } else{
       let tempMessage = state.message.map((item, i)=> item)

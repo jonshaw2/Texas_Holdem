@@ -32,7 +32,7 @@ componentDidMount() {
               </Link><br/><br/>
               Table Name: {'  '+tables.tablename} <br/>
                Ai Chips: {tables.aichips}<br/>
-              Player Assist: {tables.probability_assist}
+              Win Chance Display: {tables.probability_assist}
 
               </div>
 

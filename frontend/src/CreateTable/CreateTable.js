@@ -18,13 +18,13 @@ class CreateTable extends React.Component {
     if(probabilityassist === 'Off'){
       probabilityButton =
       <div>
-      Probability Assist: <button onClick={(event) => {this.props.changeProbability('On')}}>Off</button>
+      Win chance Display: <button onClick={(event) => {this.props.changeProbability('On')}}>Off</button>
       </div>
 
     } else{
       probabilityButton =
       <div>
-      Probability Assist: <button onClick={(event) => {this.props.changeProbability('Off')}}>On</button>
+      Win chance Display: <button onClick={(event) => {this.props.changeProbability('Off')}}>On</button>
       </div>
     }
 
